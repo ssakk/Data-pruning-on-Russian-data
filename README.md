@@ -49,3 +49,4 @@ $\text{Perplexity} = \exp\left(-\frac{1}{N} \sum \log_2(p(w_i))\right)$, где 
 
 <img src="bert_precision.png" width=45%> <img src="bert_recall.png" width=45%>
 <img src="bert_f1.png" width=45%> <img src="bert_accuracy.png" width=45%>
+Лучше всего убирать небольшой процент текстов с маой высокой перплексией
