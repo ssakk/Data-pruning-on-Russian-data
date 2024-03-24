@@ -15,6 +15,7 @@ $\text{Perplexity} = \exp\left(-\frac{1}{N} \sum \log_2(p(w_i))\right)$
 Файнтюним предобученную на русском gpt2 на скачанных данных новостных сми, затем фильтруем 2-мя способами: считая перплексию и рандомно, на 7 интервалах, отсекаем только верхнюю часть датасета без деления на bottom/top.
 ## Результаты
 Оценка модели, обученной для задачи SST, по 4 основным метрикам:
+<img src="bert_precision.png" width=50%>
 ![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/bert_precision.png {width=45%})
 ![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/bert_recall.png {width=45%})
 ![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/bert_f1.png)
