@@ -35,7 +35,7 @@ def calculate_perplexity(model, tokenizer, text, device):
     return exp(loss)
 
 # Подготовка датасета из локальных файлов
-directory = 'C:/Users/varva/Desktop/NPlus1/texts'
+directory = 'NPlus1/home/tsha/NPlus1/texts'
 files = [f for f in os.listdir(directory) if f.endswith('.txt')]
 train_files = files[:5000]  # Используем для анализа и обучения
 def train(model, train_loader):
