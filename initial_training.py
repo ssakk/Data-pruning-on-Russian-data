@@ -10,7 +10,7 @@ model = GPT2LMHeadModel.from_pretrained('sberbank-ai/rugpt3small_based_on_gpt2')
 tokenizer = GPT2Tokenizer.from_pretrained('sberbank-ai/rugpt3small_based_on_gpt2')
 tokenizer.pad_token = tokenizer.eos_token
 
-directory = 'C:/Users/varva/Desktop/NPlus1/texts'
+directory = 'NPlus1/home/tsha/NPlus1/texts'
 
 # Мы будем собирать тексты в один большой список
 train_texts = []
