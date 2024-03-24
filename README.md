@@ -30,6 +30,8 @@ $\text{Perplexity} = \exp\left(-\frac{1}{N} \sum \log_2(p(w_i))\right)$, где 
 Файнтюним предобученную на русском gpt2 на скачанных данных новостных сми, затем фильтруем 2-мя способами: считая перплексию и рандомно, на 7 интервалах, отсекаем только верхнюю часть датасета без деления на bottom/top.
 ### Результаты
 ![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/rugpt_results.png )
+1) Рандомный прунинг работает лучше, чем метод основанный на перплексии
+2) Лучший результат получается при отрезании примерно 30% данных
 ## Эксперимент 2: ruBERT
 
 * Обучение берта на задачу сентимент анализа: [модель](https://huggingface.co/cointegrated/rubert-tiny), [датасет](https://www.kaggle.com/competitions/sentiment-analysis-in-russian/overview)  
