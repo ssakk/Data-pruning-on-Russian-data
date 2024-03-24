@@ -14,5 +14,10 @@ $\text{Perplexity} = \exp\left(-\frac{1}{N} \sum \log_2(p(w_i))\right)$
 * Обучение gpt: [модель](https://huggingface.co/ai-forever/rugpt3small_based_on_gpt2), [датасет](https://github.com/TatianaShavrina/taiga_site/blob/master/corpus/nplus1.md)  
 Файнтюним предобученную на русском gpt2 на скачанных данных новостных сми, затем фильтруем 2-мя способами: считая перплексию и рандомно, на 7 интервалах, отсекаем только верхнюю часть датасета без деления на bottom/top.
 ## Результаты
+Оценка модели, обученной для задачи SST, по 4 основным метрикам:
+![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/bert_precision.png)
+![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/bert_recall.png)
+![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/bert_f1.png)
+![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/bert_accuracy.png)
 Обучая изначально на маленьком датасете из 150-ти файлов ошибка была около 8. После первого обучения gpt на полном датасете перплексия на валидационной выборке стала 2.6, после урезания 30% выборки стала 3.5. Это не говорит в пользу теории, однако для русского языка это нормальный результат, так как в русском гораздо больше морфологии, чем в английском. Далее на графике представлены результаты очистки по перплексии и случайным образом от 10% до 90%:
 ![alt-текст](https://github.com/ssakk/Data-prunning-on-Russian-data/blob/main/rugpt_results.png )
